@@ -43,6 +43,7 @@ def start_driver():
             executable_path="/app/geckodriver", log_path="/app/geckodriver.log"
         ),
     )
+    print(f"- Fetching URL: {_URL}")
     _DRIVER.get(_URL)
     sleep(5)
 
@@ -98,7 +99,7 @@ def take_screenshot(num: int):
     Returns:
         str: base64 screenshot
     """
-    print(f"Taking screenshot n°{num}")
+    print(f"- Taking screenshot n°{num}")
     return _DRIVER.get_screenshot_as_base64()
 
 
