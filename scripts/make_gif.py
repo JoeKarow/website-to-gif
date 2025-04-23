@@ -116,7 +116,7 @@ def scroll_page():
 
     while current_y < _STOP_Y:
         current_y += int(_SCROLL_STEP)
-        print(f" - Scrolling to {current_y} {int(current_y/int(_STOP_Y) * 100)}%")
+        print(f"- Scrolling {int(current_y/int(_STOP_Y) * 100)}%")
         _DRIVER.execute_script(f"window.scrollTo(0, {current_y})")
         screenshot = take_screenshot(num=len(screenshot_list))
         screenshot_list.append(screenshot)
@@ -203,12 +203,15 @@ def create_webp(screenshots: list):
 
 
 if __name__ == "__main__":
+    print(f"Starting WebDriver")
     start_driver()
     fix_aspect_ratio()
     sleep(_START_DELAY / 1000)
+    print(f"Begin capture")
     screenshots = capture_page() if _NO_SCROLL else scroll_page()
+    print(f"Stopping WebDriver")
     stop_driver()
-
+    print(f"Creating {_FORMAT} file")
     if _FORMAT == "GIF":
         create_gif(screenshots=screenshots)
     elif _FORMAT == "WEBP":
