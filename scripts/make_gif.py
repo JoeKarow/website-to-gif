@@ -115,7 +115,7 @@ def scroll_page():
 
     while current_y < _STOP_Y:
         current_y += int(_SCROLL_STEP)
-        print(f" - Scrolling to {current_y} {current_y/int(_STOP_Y) * 100}%")
+        print(f" - Scrolling to {current_y} {int(current_y/int(_STOP_Y) * 100)}%")
         _DRIVER.execute_script(f"window.scrollTo(0, {current_y})")
         screenshot = take_screenshot(num=len(screenshot_list))
         screenshot_list.append(screenshot)
