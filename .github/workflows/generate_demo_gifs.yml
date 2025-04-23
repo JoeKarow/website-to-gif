@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: ss_15_tps_80
-        uses: JoeKarow/website-to-gif
+        uses: JoeKarow/website-to-gif@main
         with:
           url: "https://docs.github.com/en/get-started/quickstart/be-social"
           save_path: '/docs/images'
@@ -20,7 +20,7 @@ jobs:
           window_width: 1280
           window_height: 720
       - name: ss_25_tps_100
-        uses: JoeKarow/website-to-gif
+        uses: JoeKarow/website-to-gif@main
         with:
           url: "https://docs.github.com/en/get-started"
           save_path: '/docs/images'
@@ -28,7 +28,7 @@ jobs:
           scroll_step: 25
           time_per_frame: 100
       - name: ss_50_tps_50
-        uses: JoeKarow/website-to-gif
+        uses: JoeKarow/website-to-gif@main
         with:
           url: "https://docs.github.com/en/get-started"
           save_path: '/docs/images'
@@ -36,7 +36,7 @@ jobs:
           scroll_step: 50
           time_per_frame: 50
       - name: ss_50_tps_100
-        uses: JoeKarow/website-to-gif
+        uses: JoeKarow/website-to-gif@main
         with:
           url: "https://docs.github.com/en/get-started"
           save_path: '/docs/images'
@@ -44,7 +44,7 @@ jobs:
           scroll_step: 50
           time_per_frame: 100
       - name: ss_50_tps_200
-        uses: JoeKarow/website-to-gif
+        uses: JoeKarow/website-to-gif@main
         with:
           url: "https://docs.github.com/en/get-started"
           save_path: '/docs/images'
@@ -52,7 +52,7 @@ jobs:
           scroll_step: 50
           time_per_frame: 200
       - name: animated_no_scroll
-        uses: JoeKarow/website-to-gif
+        uses: JoeKarow/website-to-gif@main
         with:
           url: "https://github.com/signup"
           save_path: "/docs/images"
