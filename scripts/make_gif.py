@@ -99,7 +99,7 @@ def take_screenshot(num: int):
     Returns:
         str: base64 screenshot
     """
-    print(f"- Taking screenshot n°{num}")
+    print(f"- Taking screenshot n°{num +1}")
     return _DRIVER.get_screenshot_as_base64()
 
 
