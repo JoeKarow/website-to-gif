@@ -1,5 +1,5 @@
 name: Auto Website to GIF or WebP
-description: "Upgrade your README with a fresh file of a web page."
+description: 'Upgrade your README with a fresh file of a web page.'
 author: Pablo Lecolinet
 branding:
   color: green
@@ -75,5 +75,5 @@ inputs:
     default: 20
 
 runs:
-  using: "docker"
-  image: "Dockerfile"
+  using: 'docker'
+  image: 'docker://ghcr.io/joekarow/website-to-gif/website-to-gif:main'
