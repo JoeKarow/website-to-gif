@@ -26,7 +26,7 @@ _NUMBER_OF_FRAMES = int(os.getenv("INPUT_NUMBER_OF_FRAMES"))
 
 _DRIVER: webdriver.Firefox = None
 
-logger = getLogger(__name__)
+
 
 def start_driver():
     """Start Selenium driver."""
