@@ -10,7 +10,7 @@ on:
       - v*
 
 env:
-  IMAGE_NAME: website-to-
+  IMAGE_NAME: website-to-gif
 
 jobs:
   # Run tests.
